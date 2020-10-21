@@ -85,7 +85,7 @@ export default class ClassesController {
 
             await trx('class_schedule').insert(classSchedule);
 
-            // console.log('tudo certo')
+            console.log('tudo certo')
             await trx.commit();
             return response.status(201).send()
 
